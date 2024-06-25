@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+
+
+
+
+
+        How to creat a regex:
+        -REGEX literal
+        -REGEX constructor
+        syntax:
+            new RegExp(pattern[,flags])
+    
+    flags:
+        -g(global searching)
+        -i(case-insensitive)
+        -m(multiline searching)
+
+
+    REGEX Special charectors:are those charectors which has some reserved meaning.
+        -anchor:
+                    ^:starts with
+                    $:ends with
+        -Boundaries:
+                    \b
+        -shortcut for other special charactors:
+            -\d:matches any digits or decimal digits.
+            -\w:matches any alphanumaric charactors.
+            -\s:matches any white space charactor.
+            .:matches any charactor.
+
+        Charactor class: is used to match any one of several charactor in a particular position.
+        negated charactor class:
+
+        range:[A-Za-z0-9]
+
+        Alternation:
+
+        Quantifiers:
+            +:
+            *:
+            ?:
+        Greediness:
+        
+     -->
+     <label for="mobile">mobile number :</label>
+     <input type="text" id="mobile" name="mobile" placeholder="Enter Your mobile number">
+
+     <button onclick="validatemobile()">Validate</button>
+     <p id="msg"></p>
+
+
+
+     <script>
+    function validatemobile(){
+        const mobileinput=document.getElementById("mobile").value;
+        const mobileregex=/^[6-9]\d{9}$/;
+        if(!mobileregex.test(mobileinput)){
+            document.getElementById("msg").innerHTML="Invalid Mobile Number";
+            document.getElementById('msg').style.color="red";
+            document.getElementById('mobile').style.border="2px solid red";
+        }else{
+            document.getElementById("msg").innerHTML="Valid Mobile Number";
+            document.getElementById('msg').style.color="green";
+            document.getElementById('mobile').style.border="2px solid green"
+        }
+    }
+    
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        WEB Storage:
+        Local storage:
+        Session Storage:
+
+        methods:
+            -setItem:
+            -getItem:
+            -removeItem():
+            -clear():
+            -length:
+            -key(index):
+
+
+     -->
+
+     <script>
+        // //setItem:
+        // localStorage.setItem("username","prasanth")
+
+        // //getItem:
+        // let name=localStorage.getItem('username');
+        // console.log(name);
+
+        // localStorage.setItem('username2','reddy');
+
+
+        // //removeItem():
+        // localStorage.removeItem('username2')
+
+
+        // const key=localStorage.key(1)
+        // console.log(key);
+
+        // const n=localStorage.length;
+
+        // console.log(n);
+        // localStorage.clear()
+
+        const user={name: "prasanth",age: 21};
+        localStorage.setItem('user',JSON.stringify(user))
+
+        console.log(localStorage.getItem('user'));
+
+        
+
+     </script>
+</body>
+</html>

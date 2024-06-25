@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar validation</title>
+    <style>
+        input {
+            width: 200px;
+            height: 30px;
+            font-size: 15px;
+
+        }
+
+        button {
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+     <label for="number">Aadhar Number :</label>
+     <input type="text" id="number" name="number" placeholder="Enter Your Aadhar number">
+
+     <button onclick="validateaadhar()">Validate</button>
+     <p id="num"></p>
+
+
+
+     <script>
+    function validateaadhar(){
+        const Aadharinput=document.getElementById("number").value;
+        const Aadharegex=/^\d{12}$/;
+        if(!Aadharegex.test(Aadharinput)){
+            document.getElementById("num").innerHTML="Invalid Aadhar Number";
+            document.getElementById('num').style.color="red";
+            document.getElementById('number').style.border="2px solid red";
+            document.getElementById("number").style.backgroundColor="pink"
+        }else{
+            document.getElementById("num").innerHTML="Valid Aadhar Number";
+            document.getElementById('num').style.color="green";
+            document.getElementById('number').style.border="2px solid green"
+            document.getElementById("number").style.backgroundColor="yellow"
+        }
+    }
+    
+     </script>
+     -->
+
+   
+
+
+
+    <label for="pann">PAN Number :</label>
+    <input type="text" id="pann" name="pann" placeholder="Enter Your PAN number">
+
+    <button onclick="validatepan()">Validate</button>
+    <p id="msg"></p>
+
+    <script>
+        function validatepan() {
+            const paninput = document.getElementById("pann").value;
+            const panregex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
+            if (!panregex.test(paninput)) {
+                document.getElementById('msg').innerHTML = "Invalid PAN";
+                document.getElementById('msg').style.color = "red";
+            } else {
+                document.getElementById("msg").innerHTML = "Valid PAN Number";
+                document.getElementById('msg').style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

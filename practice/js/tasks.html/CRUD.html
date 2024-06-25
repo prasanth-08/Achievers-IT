@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operation in js</title>
+</head>
+<body>
+    <!-- 
+        C: Create
+        R: Read
+        U: Update
+        D: Delete
+        
+     -->
+     <script>
+        let items=[
+            {id:1,name:"item1"},
+            {id:2,name:"itme2"},
+            {id:3,name:"itme3"}
+
+
+        ];
+        //read(retrive all item)
+
+        function readitem(){
+            return items;
+        }
+        console.log(readitem());
+
+        //read(by id):
+
+        function readItemsById(id){
+            return items.find(item=>item.id===id)
+        }
+
+        console.log(readItemsById(2));
+
+        //update:
+
+        function updateItem(id,updatedItem){
+            const index=items.findIndex(item=>item.id===id);
+            if(index!== -1){
+                items[index]={...items[index], ...updatedItem}
+            }
+        }
+
+        updateItem(3,{name: " updated item3" });
+
+        console.log(readitem());
+
+        //delete:
+
+        function deleteItem(id){
+            items=items.filter(item=>item.id !== id);
+
+            
+
+        }
+        deleteItem(2);
+
+        console.log(readitem());
+
+        
+     </script>
+</body>
+</html>

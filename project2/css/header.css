@@ -1,0 +1,30 @@
+.header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color:rgb(211, 219, 222);
+    padding: 10px;
+   
+    
+}
+.header1 a{
+    text-decoration:none;
+    text-align: center;
+    margin-right: 30px;
+    padding: 10px;
+  
+    
+
+    
+    
+    
+        
+}
+.header :first-child{
+    margin-left: 20px;
+}
+.header1 a:hover{
+    color: darkgreen;
+    text-decoration:underline;
+   
+    
+}

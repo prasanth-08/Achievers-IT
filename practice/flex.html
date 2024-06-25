@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section,div{
+            border: 2px solid red;
+            display: flex 1;
+            padding: 10px;
+            text-align: center;
+            background-color:darkblue;
+        }
+        section{
+            display: flex;
+            flex: 20% 60% 20%;
+        }
+        div{
+            flex:1 ;
+            margin: 10px;
+            background-color: aqua;
+            
+        }
+        .box1{
+            flex: 0 0 20%;
+    
+        }
+        .box2{
+            flex: 0 60% 0;
+
+        }
+        .box3{
+            flex: 20% 0 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </section>
+    
+</body>
+</html>

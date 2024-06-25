@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link>
+
+    
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex: 5;
+
+
+            & a {
+                color: white;
+                text-decoration: none;
+            }
+
+            & a:hover {
+                color: red;
+            }
+        }
+
+
+
+
+
+        header {
+            background-color: rgb(126, 125, 126);
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            & img {
+                flex: 2;
+            }
+
+
+        }
+
+        section{
+            & a {
+                display: block;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            ;
+        }
+
+        .heads {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: 38px;
+
+            & section{
+                background-color: azure;
+
+               width: max-content;
+               height: 50px;
+                display: flex;
+                padding: 20px 30px;
+                justify-content: space-around;
+                align-items: center;
+                gap: 20px;
+                box-shadow: 5px 5px 5px gray;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                transition: all 0.5s ease-in-out;
+}
+
+            }
+
+
+
+
+        
+
+        .sree:hover {
+            background-color: deepskyblue;
+            transform: scale(1.1);
+           
+
+
+
+        }
+
+        .win {
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            color: rgb(255, 255, 255);
+
+            
+
+        }
+
+        .hipe {
+            display: flex;
+            justify-content: space-around;  
+            flex-wrap: wrap;       
+
+            & .win {
+                margin-bottom: 20px;
+                color: black;
+                box-shadow: 5px 5px 5px gray;
+
+
+                & section{
+                    margin-bottom: 20px;
+                    background-color: goldenrod;
+                    padding: 15px;
+
+                }
+                & h4{
+                text-align: left;
+                }
+
+
+            }
+        }
+
+
+        .card {
+            background-color: white;
+
+        }
+        .foot{
+            display: flex;
+            width: 100%;
+            background-color:currentColor;
+            justify-content: space-evenly;
+            padding: 18px;
+            position: fixed;
+            bottom: 0px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            
+            
+            
+        }
+        aside{
+            position: fixed;
+    right: -50px;
+    top: 45%;
+    transform: rotate(270deg);
+    background-color: red;
+    padding: 15px 30px;
+    border-radius: 20px 20px 0 0;
+}
+.foot1{
+            
+            display: grid;
+            grid-template-columns: repeat(4,1fr); 
+            background-color: black;
+            color: white;
+        
+            
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+    <header>
+
+        <img src="https://www.achieversit.com/assets/images/logo-white.png">
+
+        <nav >
+
+            <a href="All Courses.html"> ALL COURSES</a>
+            <a href="Corporate Training.html">CORPORATE TRAINING</a>
+            <a href="PLACEMENTS.HTML">PLACEMENTS</a>
+            <a href="INTERNSHIP.HTML">INTERNSHIP</a>
+            <a href="REVIEWS.HTML">REVIEWS</a>
+            <a href="blogs.html">BLOG</a>
+        </nav>
+    </header>
+    <section>
+        <a href=""><img src="https://www.achieversit.com/assets/images/angular_training.jpg" alt=""></a>
+    </section>
+    <section class="heads">
+        <section class="sree">
+            <p>BECOME A <br><b>UI DEVELOPER</b></p>
+            <a href="">KNOW MORE</a>
+        </section>
+        <section class="sree">
+            <p>BECOME A <br> <b>ANGULAR DEVELOPER</b></p>
+            <a href="">KNOW MORE</a>
+        </section>
+        <section class="sree">
+            <p>BECOME A <br><b>REACT JS DEVELOPER</b></p>
+            <a href="">KNOW MORE</a>
+        </section>
+
+
+    </section>
+
+
+    <h1>TRENDING COURSES</h1>
+    <section class="hipe">
+        <section class="win">
+            <section>
+                <h1><strong>ANGULAR</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">Angular is popular for making dynamic applications and its information official and reliance infusion includes altogether lessen the measure of code that should be composed. It is being utilized broadly by devlopers for building web, mobile and other applications. Angular is released by Google and it has huge community to help in terms of bug fixes and other issues. </p>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            5.0(257)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>REACT</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">Achievers IT React JS Certification Course in Bangalore. We taught you in detailed explanations of what React JS is, why we use React JS, What is JSX, Unidirectional data flow, React Components, React Hooks and React Router, etc. Our instructor-led training to understand and build React Application with React JS components and React Hooks, React Router and we use state management library Redux.</p>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>MEAN STACK</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">"MEAN Stack Front To Back". In this course we will build an in depth full stack social network application using Angular, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application.</p><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>MERN STACK</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">"MERN Stack Front To Back". In this course we will build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application.</p><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>WEB</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">We are one of the top web training institutes in Bangalore offering advanced web development courses to our students. Students will get Trained from Professional Experts of Web Development Course, who share their experience with you and learn HTML5, CSS3, JavaScript, Bootstrap Debugging Individual practical and Live project-based Training to get Hands-on experience in Web Development Course</p>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>DIGITAL</strong></h1><br>
+                <h1><span>MARKETING</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">The Digital Marketing program from Achieversit will enable you to understand digital customer behavior, build digital marketing strategies, and identify in-demand metrics to effectively measure and optimize ROI.
+                This program will help you plan and execute transformational digital marketing strategies and best practices. The digital marketing career scope in India IS growing day by day. 
+            </p>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>REACT NATIVE</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">React Native has created a lot of excitement in the IT industry because of its cross-platform nature Developers can reuse the code between Android, iOS with minimal effort. AchieversIT institute brings you the opportunity to master React Native and embark on a career that will be the demand of the future</p><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>IONIC</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">In Our course, you will master tips and best practices for Ionic 4 & Ionic 5 that you can immediately implement to build high quality apps. Our course covers a wide variety of topics from increasing app performance, to building custom native plugins, to securing your apps.</p><br>rb
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+    </section>
+
+
+
+</section>
+    <h1>RECENT ADDITIONS</h1>
+    <section class="hipe">
+        <section class="win">
+            <section>
+                <h1><strong>UI</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">With AchieversIT's UI development course in bangalore, you will be able to master the concepts such as CSS3, CSS, HTML, JavaScript, Bootstrap, HTML5, JQuery, Angular/ReactiS etc.We will give training on real time projects and this will improve your skills and experience.</p><br><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>VUEJS</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">VueJs framework that is gaining a reputation as being a lightweight alternative to different framework and
+                libraries Vuejs is a progressive JavaScript framework with a library to build interactive web interfaces.</p><br><br><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>WORRDPRESS</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="car">Wordpress Certification Training Course in Banglore is one of the best training </p><br><br><br><br><br><br>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+        <section class="win">
+            <section>
+                <h1><strong>PYTHON</strong></h1><br>
+                <h1><span>DEVELOPMENT</span></h1><br>
+                <h1><span>COURSE</span></h1>
+            </section>
+            <p class="card">Big data, Machine Learning and Data Science using Python programming certification course authorize every one to study data science approach from basics. This Python Course will also help you genius necessary Python programming approach such as object-oriented programming , file operations data operations, and also various Python libraries such as Pandas, Numpy, Matplotlib which are important for Data Science.</p>
+            <hr>
+            <h4>REVIEWS</h4>
+            * * * * *
+            4.8(200)
+        </section>
+       
+        <aside>
+            <h3>CONTACT US</h3>
+        </aside>
+        <footer class="foot">
+            
+            <h3> <a href="">CONTACT US MOB:7997578220</a></h3>
+            <h3><a href="">REQUEST A CALL </a></h3>
+            <h3> <a href="">CHAT WITH US</a></h3>
+            
+        </footer>
+        <footer class="foot1">
+            <section>
+                <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="">
+                <p>AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidate who can develop their skills and build their career opportunities across multiple Companies.</p>
+            </section>
+            <section>
+                <h2>COMPANY</h2>
+                <P>Home <br>
+                    Placements <br>
+                    Corporate Training <br>
+                    Contact US</P>
+
+            </section>
+            <section>
+                <H2>TRENDING COURSE</H2>
+                <P>UI Development Course <br>
+                    Angular JS Course <br>
+                    React JS Course <br>
+                    Digital Marketing Course <br>
+                    Python Course</P>
+            </section>
+            <section>
+                <H2>CONTACT INFO</H2>
+                <P>#63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029 <br>
+                    India : +91 8431-040-457 <br>
+                    info@achieversit.com</P>
+            </section>
+        </footer>
+        
+
+</body>
+
+</html>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data-storage</title>
+</head>
+<body>
+    <!-- string -->
+
+    <script>
+        // litral way
+        var reddy="prasanth";
+        document.write(typeof reddy + "</br>");
+        document.write(reddy + "</br>");
+
+        // constoctor way
+
+        var greeting=new String('reddy');
+        document.write(greeting + "</br>");
+        document.write(typeof greeting  + "</br>")
+
+
+        // Array
+        // litral way
+
+        var course=['java','python','testing'];
+        document.write(course+ "</br>");
+        document.write(typeof course + "</br>");
+        console.log(course);
+        document.write(course[1] + "</br>")
+
+
+        // constoctor way
+
+        var type=new Array('undefined','user defined');
+        document.write(type + "</br>");
+        document.write(type[0] + "</br>")
+        
+
+
+        // odject
+       document.write( "<h2>object</h2>")
+
+
+        var product={
+            name:"redmi",
+            model:"MO0002",
+            price:13000,
+            desc:"this is a good product"
+
+        }
+        // using manul way:
+        document.write(product.name+"</br>");
+        document.write(product.model+"</br>");
+        document.write(product.price+"</br>");
+        document.write(product.desc+"</br>");
+
+
+
+        // using loops:
+        for(let item in product){
+            document.write(product[item]+"</br>")
+        }
+
+        // array of object:
+        document.write('<h2>array of obhect</h2>')
+        
+
+        var users=[
+            {
+
+                id:1,
+                name:'prasanth',
+                mob:7997578220,
+            },
+            {
+                id:2,
+                name:'reddy',
+                mob:7997578220,
+
+            },
+            {
+                id:3,
+                name:'boss',
+                mob:7997578220,
+
+            },
+
+            
+        ]
+            // using manul way:
+        document.write(users[0].name+"</br>");
+        document.write(users[1].name+"</br>");
+        document.write(users[2].name+"</br>");
+        // using loops:
+
+        for(let i=0;i<users.length;i++){
+            document.write(users[i].id+"</br>");
+            document.write(users[i].name+"</br>");
+
+            document.write(users[i].mob+"</br>");
+        }
+        
+
+    </script>
+</body>
+</html>

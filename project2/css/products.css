@@ -1,0 +1,15 @@
+.products{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    font-size: medium;
+}
+.products1,div img{
+    margin: 1px solid red;
+    height: 200px;
+    width: 200pxpx;
+    color: aqua;
+    padding: 5px;
+}

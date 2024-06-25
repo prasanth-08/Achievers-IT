@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function in js</title>
+</head>
+
+<body>
+    <!-- 
+        functions:function can be defined and called at any point of time.
+
+        keyword: 'function'.
+
+        syntsx: function function_name(parameter1,parameter2){
+
+             //function logics
+
+
+        }
+
+        function_name(parameter1,parameter2)
+
+
+
+     -->
+ 
+
+    <script>
+        // function without parameter:
+        
+        // function gstcal() {
+        //     let price = 1000;
+        //     let gp = 10;
+
+        //     let totalprice = price - (price * gp / 100);
+
+        //     console.log(totalprice);
+        // }
+        // gstcal();
+
+        // //function with parameter:
+        // function gstcalc(p, gp) {
+
+        //     let tp = p + (p * gp / 100);
+        //     console.log(tp);
+        // }
+        // gstcalc(2000, 19);
+        // gstcalc(100, 37);
+
+        // //function with return statements:
+
+        // function gst(p, gp) {
+
+        //     let total = p + (p * gp / 100);
+
+        //     // console.log(total);
+
+        //     return total;
+        // }
+        // let gst1 = gst(1000, 8);
+        // let gst2 = gst(5000, 10);
+
+        // console.log(gst1);
+        // console.log(gst2);
+
+        // //function with default parameters:
+
+        // function gstcalcu(p, gp = 15) {
+        //     let total = p + (p * gp / 100);
+
+        //     return total;
+
+        // }
+
+        // let a = gstcalcu(1000);
+
+        // console.log(a);
+
+        // //anonymos function:
+
+        // setTimeout(function () {
+        //     console.log("good morning");
+        // }, 4000);
+
+        // //task in class
+
+        // const gst6 = function (p, gp) {
+
+        //     var total = p + (p * gp / 100);
+        //     console.log(total);
+        // }
+        // gst6(1000, 10);
+
+
+        // //callback function:
+
+        // function teacher(teach) {
+        //     console.log("i am teacher");
+
+        //     teach();
+        // }
+
+        // function student() {
+        //     console.log("I am a student");
+
+        // }
+        // teacher(student)
+
+        // //nested function:
+
+
+        // function up() {
+        //     let upper = "i am upper";
+
+        //     function down() {
+        //         console.log(upper)
+
+        //     }
+
+
+        //     down();
+
+        // }
+
+
+        // up() -->
+
+        //recursive function: 
+
+        function factorial(n){
+            if(n==0){
+                return 1;
+            }else{
+                return n* factorial(n-1);
+
+            }
+        }
+            console.log(factorial(0));
+
+            /*
+            IIFE:
+            syntax-
+                            (function(){
+                                    //function ligics
+
+                            })();
+            
+            
+            
+            */
+
+            (function (a,b){
+                console.log(a+b);
+            })
+            (1,2)
+
+            /*
+            arrow function:
+
+            syntax:()=>{//function logics}
+
+            */
+            
+            let gstp=(p,gp)=>{
+                let tp=p+(p*gp/100);
+                return tp;
+            }
+
+                console.log(gstp(11000,12));
+    </script>
+</body>
+
+</html>

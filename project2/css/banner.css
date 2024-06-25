@@ -1,0 +1,39 @@
+.banner{
+    background-image: url(/project2/assets/img2/images/hero4.png);
+   height:850px;
+    width: 100%;
+    padding-bottom: 30px;
+    
+}
+.banner div h2{
+    color: aliceblue;
+}
+.banner1{
+    background-image: url(/project2/assets/img2/images/button.png);
+    height: 50px;
+    width: 110px;
+    padding-left: 100px;
+    color:rgb(13, 52, 13);
+    font-size:large;
+    line-height-step: initial;
+    
+}
+.section{
+    padding-left: 100px;
+    padding-top: 200px;
+    font-size:  50px;
+    color: azure;
+    
+}
+.img{
+    font-size:50px;
+    padding-left: 100px;
+}
+.pad{
+    padding-left: 100px;
+    
+}
+.banner div span{
+    color: green;
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+   
+     
+     
+
+
+     <select name="day" id="day">
+
+    </select>
+
+    <select name="Month" id="Month">
+        
+    </select>
+
+    <select name="year" id="year">
+
+    </select>
+    
+    <!-- while loop -->
+    
+    <script>
+        var opt = "<option>-day-</option>";
+        var i = 1;
+    
+        while (i <= 31) {
+            opt += "<option value=" + i + ">" + i + "</option>";
+            i++; 
+        }
+    
+        var selectElement = document.getElementById('day');
+        selectElement.innerHTML = opt;
+    
+
+
+
+    // for loop
+
+         var opt = "<option>-month-</option>";
+     var month = ["--Month--","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
+        var month1;
+        for(let i = 0;i<month.length;i++){
+            month1+= "<option value = "+month[i]+">"+month[i]+"</option>";
+        }
+        document.getElementById("Month").innerHTML=month1;
+    
+    
+
+
+
+
+    // do while loop
+
+    var opt = "<option>-year-</option>";
+    var i = 1900;
+
+    do {
+        opt += "<option value=" + i + ">" + i + "</option>";
+        i++;
+    } while (i <=2023);
+
+    var selectElement = document.getElementById('year');
+    selectElement.innerHTML = opt;
+</script>  
+
+
+
+
+
+
+
+<!-- bro -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops In Js</title>
+</head>
+<body>
+
+    <select name="Day" id="Day">
+
+    </select>
+
+    <select name="Month" id="Month">
+        
+    </select>
+
+    <select name="Year" id="year">
+
+    </select>
+    
+    
+    
+    
+    <script>
+        // day 
+        // var Day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+        var opt = "<option>--Day--</option>";
+        for(let i = 1;i<=31;i++){
+            opt+="<option value = "+i+">"+i+"</option>";
+        }
+        document.getElementById("Day").innerHTML=opt;
+        
+        
+        // year
+        var opt = "<option>--Year--</option>";
+        for(let i = 1999;i<=2023;i++){
+            opt+="<option value ="+i+">"+i+"</option>";
+        }
+        document.getElementById("year").innerHTML=opt;
+        
+        // month
+        var month = ["--Month--","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
+        var month1;
+        for(let i = 0;i<month.length;i++){
+            month1+= "<option value = "+month[i]+">"+month[i]+"</option>";
+        }
+        document.getElementById("Month").innerHTML=month1;
+    </script>
+</body>
+</html> 
+
+    
+
+
+    
+</body>
+</html> -->

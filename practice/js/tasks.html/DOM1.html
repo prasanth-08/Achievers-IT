@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Table Creation</title>
+</head>
+<body>
+
+<h2>Table created using JavaScript</h2>
+
+<script>
+  // Create an array with data for the table
+  var data = [
+    ["S.no", "Name", "City"],
+    [1, "prasanth", "kuppam"],
+    [2, "sreedhar", "kuppam"],
+    [3, "sudha", "madanapalli"]
+  ];
+
+  // Create a table element
+  var table = document.createElement("table");
+  
+  // Loop through the data and create rows and cells
+  for (var i = 0; i < data.length; i++) {
+    var row = document.createElement("tr"); 
+    
+    for (var j = 0; j < data[i].length; j++) {
+      var cell = document.createElement("td");
+      var cellText = document.createTextNode(data[i][j]); 
+      cell.appendChild(cellText); 
+      row.appendChild(cell); 
+    }
+    
+    table.appendChild(row); 
+  }
+  
+  // Add some basic styles to the table (optional)
+  table.style.border = "3px solid red";
+  table.style.borderCollapse = "collapse";
+  table.style.textAlign="center";
+
+  
+  // Append the table to the document body
+  document.body.appendChild(table);
+</script>
+
+</body>
+</html>
